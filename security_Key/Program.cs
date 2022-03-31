@@ -74,9 +74,7 @@ namespace security_Key
             return res;
 
         }
-        /*Не удается сделать правильно проверку
-         Вроде все верно считает, формулы правильно
-        Но в ручную когда считаю u2 не верно высчитывается*/
+       
         static bool Check(long r, long s, int q, int a, int y, int p)
         {
             if (s<0 || s>q || r<0 || r>q) return false;
